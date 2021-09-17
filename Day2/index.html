@@ -14,13 +14,14 @@
         Amount
     </h1>
     <p class="page-subtitle">
-        US Dollars to BRL Reais Exchange Rate
+        US Dollars to BRL Reais or Euro Exchange Rate
     </p>
     <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
         class="page-logo" alt=""><br><br>
-    <label for="moeda">Amount</label><br>
+    <label for="moeda">Amount in Dollars</label><br>
     <input type="number" id="valor" size="2" /><br>
     <button type="submit" onclick="Converter()">Convert to R$</button>
+    <button type="submit" onclick="ConverterEuro()">Convert to €</button>
     <h2 id="valorConvertido"></h2>
 </div>
 <a href="https://alura.com.br/" target="_blank">
@@ -37,6 +38,19 @@
     var elementoValorConvertido = document.getElementById("valorConvertido")
  
     elementoValorConvertido.innerHTML = "The amount is R$: " + valorEmReal;
+}
+
+function ConverterEuro() {
+    var valorElemento = document.getElementById("valor");
+    var valor = valorElemento.value;
+    var valorEmDolarNumerico = parseFloat(valor);
+
+    var valorEuro = valorEmDolarNumerico * 0.85;
+
+    var elementoValorConvertido = document.getElementById("valorConvertido")
+ 
+    elementoValorConvertido.innerHTML = "The amount is €: " + valorEuro;
+
 }
 </script>
 </html>
