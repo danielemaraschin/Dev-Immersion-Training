@@ -20,5 +20,25 @@
     <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
   </a>
 </body>
+<script>
+  var nome = "Dani";
+console.log("Bem vindo " + nome);
+
+var notaPrimeiroBimestre = 9.5;
+console.log(notaPrimeiroBimestre);
+var notaSegundoBimestre = 5.5;
+var notaTerceiroBimestre = 7.5;
+var notaQuartoBimestre = 6.6;
+
+var notaFinal =
+  (notaPrimeiroBimestre +
+    notaSegundoBimestre +
+    notaTerceiroBimestre +
+    notaQuartoBimestre) /
+  4;
+
+var NotaArredondada = notaFinal.toFixed(1); // to fixed  = coloca apenas 1 casa decimal
+console.log("a média das notas do bimestre é: " + NotaArredondada) ;
+</script>
 
 </html>
