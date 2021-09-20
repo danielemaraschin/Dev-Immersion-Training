@@ -13,6 +13,6 @@ function Chutar() {
   } else if (chute > 10 || chute < 0) {
     elementoResultado.innerHTML = "Você deve digitar um número entre 0 e 10";
   } else {
-    elementoResultado.innerHTML = "Você errou.";
+    elementoResultado.innerHTML = "Você errou, o número secreto era: " + numeroSecreto;
   }
 }
