@@ -46,9 +46,9 @@ body {
     text-align: center;
     color: white;
     font-family: 'Courier New', Courier, monospace;
-    
+    background-color: tomato;
     background-position: center block;
-    border-radius: 20px;
-    background;
+    border-radius: 10px;
+    border-radius: 50%;
     
   }
