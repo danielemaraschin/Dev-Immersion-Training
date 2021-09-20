@@ -8,10 +8,11 @@ function Chutar() {
   console.log(chute);
 
   if (chute == numeroSecreto) {
+      elementoResultado.innerHTML = "Você acertou!"
     console.log("acertou");
   } else if (chute > 10 || chute < 0) {
-    console.log("Você deve digitar um número entre 0 e 10");
+    elementoResultado.innerHTML = "Você deve digitar um número entre 0 e 10";
   } else {
-    console.log("errou");
+    elementoResultado.innerHTML = "Você errou.";
   }
 }
