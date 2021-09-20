@@ -42,11 +42,11 @@ body {
     max-height: 250px;
   }
   
-  p {
+  h3 {
     text-align: center;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     background-color: tomato;
     border-radius: 20px;
-    block-size: 18px;
+    
   }
