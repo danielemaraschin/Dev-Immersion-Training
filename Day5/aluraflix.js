@@ -1,12 +1,18 @@
 function adicionarFilme() {
 
-    console.log('clicado')
     var filmeFavorito = document.getElementById("filme").value;
-    var filmeFavorito = "<img src=" + filmeFavorito + ">";
-    console.log(filmeFavorito);
-    var elementoListaFilmes = document.getElementById("listaFilmes");
-    console.log(elementoListaFilmes);
-    elementoListaFilmes.innerHTML = elementoListaFilmes.innerHTML + filmeFavorito;
+
+    if(filmeFavorito.endsWith(".jpg")){
+        var elementofilmeFavorito = "<img src=" + filmeFavorito + ">"; 
+        var elementoListaFilmes = document.getElementById("listaFilmes");
+       
+        elementoListaFilmes.innerHTML = elementoListaFilmes.innerHTML + elementofilmeFavorito;
+        //vai add o elementoFilmeFavorito dentro do elementoListaFilmes, no HTML
+    }else{
+        console.error("Adicione uma img")
+        //fica vermelho no formato de erro.
+    }
+
     document.getElementById("filme").value = "";
-    //vai add o elementoFilmeFavorito dentro do elementoListaFilmes, no HTML.
+    //independente se mandar certo ou nao a imagem, vai limpar o campo.
 }
