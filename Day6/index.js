@@ -18,6 +18,6 @@ calculaPontos(rafa);
 
 function calculaPontos(jogador){
     var pontos = (jogador.vitorias * 3) + jogador.empates;
-    console.log(pontosb)
+    console.log(pontos)
 
 }
