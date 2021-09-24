@@ -22,8 +22,14 @@ function calculaPontos(jogador){
 
 }
 
+rafa.pontos = calculaPontos(rafa);
+paulo.pontos = calculaPontos(paulo)
+
 var jogadores = [rafa, paulo];
 
 function exibeJogadoresTela (jogador) {
     var elemento = "";
+    for (var i = 0; i< jogadores.length; i++){
+
+    }
 }
