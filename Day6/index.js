@@ -21,3 +21,9 @@ function calculaPontos(jogador){
     console.log(pontos)
 
 }
+
+var jogadores = [rafa, paulo];
+
+function exibeJogadoresTela (jogador) {
+    var elemento = "";
+}
