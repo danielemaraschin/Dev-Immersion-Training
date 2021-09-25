@@ -32,7 +32,7 @@ function exibeJogadoresNaTela(jogadores) {
   }
 
   var tabelaJogadores = document.getElementById("tabelaJogadores");
-  tabelaJogadores.innerHTML = elemento;
+  tabelaJogadores.innerHTML = elemento ;
 }
 
 exibeJogadoresNaTela(jogadores);
