@@ -8,6 +8,7 @@ function adicionarFilme() {
 function listarFilmeNaTela(filme) {
     var elementoFilmeFavorito = "<img src=" + filme + ">";
     var elementoListaFilmes = document.getElementById("listaFilmes");
+    console.log(elementoListaFilmes)
     elementoListaFilmes.innerHTML = elementoListaFilmes.innerHTML + elementoFilmeFavorito;
     //vai add o elementoFilmeFavorito dentro do elementoListaFilmes, no HTML
 }

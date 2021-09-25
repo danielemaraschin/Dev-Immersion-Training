@@ -32,6 +32,8 @@ function exibeJogadoresNaTela(jogadores) {
   }
 
   var tabelaJogadores = document.getElementById("tabelaJogadores");
+  console.log(elemento)
+  console.log(tabelaJogadores)
   tabelaJogadores.innerHTML = elemento ;
 }
 
