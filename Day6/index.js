@@ -30,7 +30,7 @@ function exibeJogadoresTela (jogadores) {
     }
     console.log(elemento)
     var tabelaJogadores = document.getElementById("tabelaJogadores");
-    console.log(tabelaJogadores)
     tabelaJogadores.innerHTML = elemento;
 }
+
 exibeJogadoresTela(jogadores);
