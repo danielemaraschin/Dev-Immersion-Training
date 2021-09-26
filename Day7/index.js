@@ -14,10 +14,19 @@ function sortearCarta(){
 
   var numeroCartaMaquina = parseInt(Math.random() * 3)
   cartaMaquina = cartas[numeroCartaMaquina]
-  console.log(cartaMaquina)
+  
   
   var numeroCartaJogador = parseInt(Math.random() * 3)
+  
+    while(numeroCartaMaquina == numeroCartaJogador){ //quando essa sentença nos parenteses for falsa, sai do while e nao eh mais executdo
+       var numeroCartaJogador = parseInt(Math.random() * 3)
+    }
+    
   cartaJogador = cartas[numeroCartaJogador]
+  
+  
+
+  console.log(cartaMaquina)
   console.log(cartaJogador)
 }
   
