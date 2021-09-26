@@ -11,9 +11,13 @@ var cartas = [carta1, carta2, carta3];
 
 
 function sortearCarta(){
-  var numeroCartaMaquina = parseInt(Math.random() * 3)
 
+  var numeroCartaMaquina = parseInt(Math.random() * 3)
   cartaMaquina = cartas[numeroCartaMaquina]
   console.log(cartaMaquina)
-  }
+  
+  var numeroCartaJogador = parseInt(Math.random() * 3)
+  cartaJogador = cartas[numeroCartaJogador]
+  console.log(cartaJogador)
+}
   
