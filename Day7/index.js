@@ -32,17 +32,29 @@ function sortearCarta(){
   exibirOpcoes()
 }
 
-function jogar(){
-    console.log("Botão jogar foi clicado");
-}
 
 function exibirOpcoes(){
     var opcoes =  document.getElementById("opcoes")
     var opcoesTexto = "";
                                                         //in é dentro da lista
     for(var indiceAtributos in cartaJogador.atributos) { //var indiceAtributos estamos declarando aqui, var nova, como o 'i'no for 
-        opcoesTexto += "<input type='radio'name='atributo' value='" +indiceAtributos + "'/>"; //escrevendo HTML no js
+        opcoesTexto += "<input type='radio'name='atributo' value='" +indiceAtributos + "'/>" + indiceAtributos ; //escrevendo HTML no js
     }
-    opcoes.innerHTML = opcoesTexto
-    ;
+    opcoes.innerHTML = opcoesTexto;
+}
+
+function obtemAtributoSelecionado(){
+    var radioAtributos = document.getElementsByName("atributo");
+
+    for(var i= 0; i< radioAtributos.length; i++) { //passa por todos os atributos que estao na tag com nome 'atributo'
+        if(radioAtributos[i].checked == true){ //verifica qual input radio estÁ SELECIONADO --pode so colocar .checked , nao precisa colocar o true.
+            return radioAtributos[i].value //seleciona o valor que está no atributo do indice que foi selecionado
+        }
+    }    
+}
+
+function jogar(){
+    console.log("Botão jogar foi clicado");
+    var atributoSelecionado = obtemAtributoSelecionado();
+    console.log(atributoSelecionado);
 }
