@@ -57,4 +57,9 @@ function jogar(){
     console.log("Botão jogar foi clicado");
     var atributoSelecionado = obtemAtributoSelecionado();
     console.log(atributoSelecionado);
+    console.log(cartaJogador.atributos[atributoSelecionado]) 
+//nao poderia colocar cartaJogador.atributos.atributoSelecionado pq o console vai varrer o carta jogador, entrar dentro dos atributos
+//e dentro dos atributos iria procurar o atributoSelecionado, mas nao existe. 
+//Para acessarmos a var atributoSelecionado
+//mesma sintaxe q as listas, mas atributos eh objeto e nao lista
 }
