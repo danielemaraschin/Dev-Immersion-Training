@@ -28,7 +28,18 @@ function sortearCarta(){
   console.log(cartaJogador)
 
   document.getElementById("btnSortear").disabled= true;
-  document.getElementById("btnJogar").disabled= false;
-  
+  document.getElementById("btnJogar").disabled= false; 
+  exibirOpcoes()
 }
-  
+
+function jogar(){
+    console.log("Botão jogar foi clicado");
+}
+
+function exibirOpcoes(){
+    var opcoes =  document.getElementById("opcoes")
+                                                        //in é dentro da lista
+    for(var indiceAtributos in cartaJogador.atributos) { //var indiceAtributos estamos declarando aqui, var nova, como o 'i'no for 
+        console.log(indiceAtributos)
+    };
+}
