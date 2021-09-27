@@ -41,7 +41,7 @@ function exibirOpcoes(){
     var opcoesTexto = "";
                                                         //in é dentro da lista
     for(var indiceAtributos in cartaJogador.atributos) { //var indiceAtributos estamos declarando aqui, var nova, como o 'i'no for 
-        opcoesTexto = "<input type='radio'name='atributo' value='" +indiceAtributos + "'/>"; //escrevendo HTML no js
+        opcoesTexto += "<input type='radio'name='atributo' value='" +indiceAtributos + "'/>"; //escrevendo HTML no js
     }
     opcoes.innerHTML = opcoesTexto
     ;
