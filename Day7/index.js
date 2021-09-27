@@ -24,9 +24,11 @@ function sortearCarta(){
     
   cartaJogador = cartas[numeroCartaJogador]
   
-  
-
   console.log(cartaMaquina)
   console.log(cartaJogador)
+
+  document.getElementById("btnSortear").disabled= true;
+  document.getElementById("btnJogar").disabled= false;
+  
 }
   
