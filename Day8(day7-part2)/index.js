@@ -83,4 +83,18 @@ function jogar() {
 
 function exibirCartaJogador(){
   var divCartaJogador = document.getElementById("carta-jogador");
+  divCartaJogador.style.backgroundImage =`url(${cartaJogador.imagem})`;
+  //ou =  divCartaJogador.style-backgroundImage="url("+ cartaJogador.imagem +")";
+  var moldura =
+  '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent.png" style=" width: inherit; height: inherit; position: absolute;">';
+
+  var divOpcoesDeAtributos = "<div id='opcoes' class='carta-status'>"
+
+  var opcoesTexto = "";
+  
+  for (var indiceAtributos in cartaJogador.atributos) {
+      opcoesTexto += "<input type='radio'name='atributo' value='" + indiceAtributos + "'/>" + indiceAtributos + " " + cartaJogador.atributos[indiceAtributos] + "<br>" ; 
+  }
+  var nome = `<p class="carta-subtitle"> ${cartaJogador.nome} </p>`
+  divCartaJogador.innerHTML = moldura + nome + divOpcoesDeAtributos + opcoesTexto; + "</div>"
 }
