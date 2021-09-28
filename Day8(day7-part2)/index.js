@@ -75,8 +75,10 @@ function jogar() {
         elementoResultado.innerHTML = "Você venceu.";
     }else if(valorCartaMaquina> valorCartaJogador) {
         elementoResultado.innerHTML = "Você perdeu, o valor da carta do outro jogador é maior.";
+        elementoResultado.style.backgroundColor =`red`;
     }else{
-        elementoResultado.innerHTML = "empatou.";
+        elementoResultado.style.backgroundColor =`white`;
+        elementoResultado.innerHTML = "Você empatou com o outro jogador.";
     }
     console.log(cartaMaquina)
 
@@ -92,8 +94,8 @@ function exibirCartaJogador(){
   var divOpcoesDeAtributos = "<div id='opcoes' class='carta-status'>"
 
   var opcoesTexto = "";
-  
-  for (var indiceAtributos in cartaJogador.atributos) {
+                                                                                                                            //ex.: magia: 10, ataque: 9,... 
+  for (var indiceAtributos in cartaJogador.atributos) {                 //input radio    //nome do atributo de cada input //valor de cada atributo
       opcoesTexto += "<input type='radio'name='atributo' value='" + indiceAtributos + "'/>" + indiceAtributos + " " + cartaJogador.atributos[indiceAtributos] + "<br>" ; 
   }
   var nome = `<p class="carta-subtitle"> ${cartaJogador.nome} </p>`
