@@ -38,20 +38,20 @@ function sortearCarta() {
 
     document.getElementById("btnSortear").disabled = true;
     document.getElementById("btnJogar").disabled = false;
-    exibirOpcoes();
+   // exibirOpcoes();
   exibirCartaJogador();
 }
 
 
-function exibirOpcoes() {
-    var opcoes = document.getElementById("opcoes")
-    var opcoesTexto = "";
-     
-    for (var indiceAtributos in cartaJogador.atributos) {
-        opcoesTexto += "<input type='radio'name='atributo' value='" + indiceAtributos + "'/>" + indiceAtributos; 
-    }
-    opcoes.innerHTML = opcoesTexto;
-}
+// function exibirOpcoes() {
+    // var opcoes = document.getElementById("opcoes")
+    // var opcoesTexto = "";
+    //  
+    // for (var indiceAtributos in cartaJogador.atributos) {
+        // opcoesTexto += "<input type='radio'name='atributo' value='" + indiceAtributos + "'/>" + indiceAtributos; 
+    // }
+    // opcoes.innerHTML = opcoesTexto;
+// }
 
 function obtemAtributoSelecionado() {
     var radioAtributos = document.getElementsByName("atributo");
@@ -71,6 +71,7 @@ function jogar() {
     var valorCartaMaquina = cartaMaquina.atributos[atributoSelecionado];
 
     if(valorCartaJogador > valorCartaMaquina){
+        elementoResultado.style.backgroundColor =`green`;
         elementoResultado.innerHTML = "Você venceu.";
     }else if(valorCartaMaquina> valorCartaJogador) {
         elementoResultado.innerHTML = "Você perdeu, o valor da carta do outro jogador é maior.";
