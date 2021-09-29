@@ -72,22 +72,22 @@ function obtemAtributoSelecionado() {
 function jogar() {
     var atributoSelecionado = obtemAtributoSelecionado();
     var elementoResultado = document.getElementById("resultado")
-    console.log(atributoSelecionado);
-    var valorCartaJogador = cartaJogador.atributos[atributoSelecionado];
-    var valorCartaMaquina = cartaMaquina.atributos[atributoSelecionado];
+  
+     //var valorCartaJogador = cartaJogador.atributos[atributoSelecionado];
+    //var valorCartaMaquina = cartaMaquina.atributos[atributoSelecionado];
 
-    if (valorCartaJogador > valorCartaMaquina) {
-        elementoResultado.style.backgroundColor = `green`;
-        elementoResultado.innerHTML = "Você venceu.";
-    } else if (valorCartaMaquina > valorCartaJogador) {
-        elementoResultado.innerHTML = "Você perdeu, o valor da carta do outro jogador é maior.";
-        elementoResultado.style.backgroundColor = `red`;
+    if (cartaJogador.atributos[atributoSelecionado] > cartaMaquina.atributos[atributoSelecionado]) {
+        htmlResultado ="<p class='resultado-final'> Venceu! </p>"
+        //elementoResultado.innerHTML = "Você venceu.";
+    } else if (cartaMaquina.atributos[atributoSelecionado] > cartaJogador.atributos[atributoSelecionado]) {
+        htmlResultado ="<p class='resultado-final'> Você perdeu. </p>"
+        // elementoResultado.innerHTML = "Você perdeu, o valor da carta do outro jogador é maior.";
+        // elementoResultado.style.backgroundColor = `red`;
     } else {
-        elementoResultado.style.backgroundColor = `white`;
-        elementoResultado.innerHTML = "Você empatou com o outro jogador.";
+        //elementoResultado.style.backgroundColor = `white`;
+        htmlResultado = "<p class='resultado-final'> Empatou. </p>"
     }
-    console.log(cartaMaquina)
-
+    elementoResultado.innerHTML = htmlResultado;
 }
 
 function exibirCartaJogador() {
