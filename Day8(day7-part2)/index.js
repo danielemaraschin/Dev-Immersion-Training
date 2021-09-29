@@ -72,15 +72,15 @@ function obtemAtributoSelecionado() {
 function jogar() {
     var atributoSelecionado = obtemAtributoSelecionado();
     var elementoResultado = document.getElementById("resultado")
-  
-     //var valorCartaJogador = cartaJogador.atributos[atributoSelecionado];
+
+    //var valorCartaJogador = cartaJogador.atributos[atributoSelecionado];
     //var valorCartaMaquina = cartaMaquina.atributos[atributoSelecionado];
 
     if (cartaJogador.atributos[atributoSelecionado] > cartaMaquina.atributos[atributoSelecionado]) {
-        htmlResultado ="<p class='resultado-final'> Venceu! </p>"
+        htmlResultado = "<p class='resultado-final'> Venceu! </p>"
         //elementoResultado.innerHTML = "Você venceu.";
     } else if (cartaMaquina.atributos[atributoSelecionado] > cartaJogador.atributos[atributoSelecionado]) {
-        htmlResultado ="<p class='resultado-final'> Você perdeu. </p>"
+        htmlResultado = "<p class='resultado-final'> Você perdeu. </p>"
         // elementoResultado.innerHTML = "Você perdeu, o valor da carta do outro jogador é maior.";
         // elementoResultado.style.backgroundColor = `red`;
     } else {
@@ -88,7 +88,31 @@ function jogar() {
         htmlResultado = "<p class='resultado-final'> Empatou. </p>"
     }
     elementoResultado.innerHTML = htmlResultado;
+
+    document.getElementById('btnJogar').disabled = true;
+    exibirCartaMaquina();
 }
+
+function exibirCartaMaquina() {
+
+    var divCartaMaquina = document.getElementById("carta-maquina");
+    divCartaMaquina.style.backgroundImage = `url(${cartaMaquina.imagem})`;
+
+    var moldura =
+        '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent.png" style=" width: inherit; height: inherit; position: absolute;">';
+
+    var divOpcoesDeAtributos = "<div id='opcoes' class='carta-status'>"
+
+    var opcoesTexto = "";
+    //ex.: magia: 10, ataque: 9,... 
+    for (var indiceAtributos in cartaMaquina.atributos) {                 //nome do atributo de cada input //valor de cada atributo
+
+        opcoesTexto += "<p type='text'name='atributo' value='" + indiceAtributos + "'/>" + indiceAtributos + " " + cartaMaquina.atributos[indiceAtributos] + "</p>";
+    }
+    var nome = `<p class="carta-subtitle"> ${cartaMaquina.nome} </p>`
+    divCartaMaquina.innerHTML = moldura + nome + divOpcoesDeAtributos + opcoesTexto + "</div>"
+}
+
 
 function exibirCartaJogador() {
     var divCartaJogador = document.getElementById("carta-jogador");
