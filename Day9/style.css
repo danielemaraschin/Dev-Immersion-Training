@@ -3,18 +3,66 @@ body{
     font-family: Roboto;
     font-style: normal;
 }
+main{
+    position: absolute;
+    width: 1260px;
+    height: 926px;
+    left: 90px;
+    top: 49px;
+    
+    background: #ECF4FF;
+    box-shadow: 6px 6px 6px #0E1D2F;
+    border-radius: 20px;
+}
+
 h1{
     position: absolute;
-width: 499px;
-height: 42px;
-left: 322px;
-top: 117px;
+    width: 499px;
+    height: 42px;
+    left: 322px;
+    top: 117px;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-line-height: 42px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
 
-color: #1C1C1C;
+    color: #1C1C1C;
 }
+
+h3{
+    position: absolute;
+    width: 499px;
+    height: 42px;
+    left: 322px;
+    top: 176px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #1C1C1C;
+}
+
+
+
+
+img{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
