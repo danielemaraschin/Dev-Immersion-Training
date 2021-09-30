@@ -1,3 +1,20 @@
 body{
-    background: linear-gradient(236.85deg, #221fcc 27.26%, #a734a1 96.03%);
+    background: linear-gradient(236.85deg, #504ed4 27.26%, #a734a1 96.03%);
+    font-family: Roboto;
+    font-style: normal;
+}
+h1{
+    position: absolute;
+width: 499px;
+height: 42px;
+left: 322px;
+top: 117px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 42px;
+
+color: #1C1C1C;
 }
