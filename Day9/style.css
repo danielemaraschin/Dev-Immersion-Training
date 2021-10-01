@@ -7,7 +7,10 @@ body{
     font-style: normal;
 }
 
-main
+.perfil{
+    display: flex;
+    align-items: center;
+}
 
 h1{
     position: absolute;
@@ -52,7 +55,7 @@ img{
 }
 
 .container{
-    position: absolute;
+    /*position: absolute;*/
     color: #1c1c1c;
     width: 1260px;
     height: 926px;
@@ -62,7 +65,7 @@ img{
     background: plum;
     box-shadow: 6px 6px 6px #0E1D2F;
     border-radius: 20px;
-    padding:
+    padding: 64px;
 }
 main{
     position: absolute;
