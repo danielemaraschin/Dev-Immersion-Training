@@ -44,6 +44,28 @@ body{
     color: #1C1C1C;
 }
 
+.titulo li{
+    position: absolute;
+    width: 499px;
+    height: 42px;
+    left: 322px;
+    min-width: none;
+    font: Roboto;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 25px;
+
+    color: #1C1C1C;  
+}
+li#git{
+    top: 250px;
+}
+li#linkedin{
+    top: 280px;
+}
+
 .perfil-foto{
     position: absolute;
     width: 158px;
@@ -81,21 +103,26 @@ main{
     border-radius: 20px;
 }
 
+
+.projetos{
+    display: flex;
+    flex-direction:column;
+}
+
 h4{
+    width: 371px;
+    height: 35px;
+    left: 534px;
+    top: 388px;
 
-width: 371px;
-height: 35px;
-left: 534px;
-top: 388px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56.25px;
+    text-align: center;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 48px;
-line-height: 56.25px;
-text-align: center;
-
-color: #1C1C1C;
+    color: #1C1C1C;
 }
 
 
