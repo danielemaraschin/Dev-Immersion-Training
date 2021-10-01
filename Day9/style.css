@@ -41,18 +41,30 @@ h3{
     height: 42px;
     left: 322px;
     top: 176px;
-
-    font-family: 'Ephesis', cursive;
+    font: Roboto;
+    font-weight: 400;
     font-style: normal;
     font-weight: normal;
-    font-size: 50px;
-    line-height: 48px;
+    font-size: 24px;
+    line-height: 28.13px;
 
     color: #1C1C1C;
 }
+/* .container{ */
+/*  */
+/* } */
+
+img{
+    position: absolute;
+width: 158px;
+height: 160px;
+left: 154px;
+top: 79px;
 
 
-
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 460px;
+}
 
 
 
