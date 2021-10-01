@@ -1,22 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Roboto:wght@400;700&display=swap');
 
 
 body{
     background: linear-gradient(236.85deg, #504ed4 27.26%, #a734a1 96.03%);
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
+
 }
-main{
-    position: absolute;
-    width: 1260px;
-    height: 926px;
-    left: 90px;
-    top: 49px;
-    
-    background: #ECF4FF;
-    box-shadow: 6px 6px 6px #0E1D2F;
-    border-radius: 20px;
-}
+/* main{ */
+    /* position: absolute; */
+    /* width: 1260px; */
+    /* height: 926px; */
+    /* left: 90px; */
+    /* top: 49px; */
+    /*  */
+    /* background: #ECF4FF; */
+    /* box-shadow: 6px 6px 6px #0E1D2F; */
+    /* border-radius: 20px; */
+/* } */
 
 h1{
     position: absolute;
@@ -41,11 +42,11 @@ h3{
     left: 322px;
     top: 176px;
 
-    font-family: Roboto;
+    font-family: 'Ephesis', cursive;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 50px;
+    line-height: 48px;
 
     color: #1C1C1C;
 }
