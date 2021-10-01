@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
 body{
     background: linear-gradient(236.85deg, #504ed4 27.26%, #a734a1 96.03%);
     font-family: Roboto;
@@ -48,11 +51,6 @@ h3{
 }
 
 
-
-
-img{
-    
-}
 
 
 
