@@ -5,19 +5,9 @@ body{
     background: linear-gradient(236.85deg, #504ed4 27.26%, #a734a1 96.03%);
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-
 }
-/* main{ */
-    /* position: absolute; */
-    /* width: 1260px; */
-    /* height: 926px; */
-    /* left: 90px; */
-    /* top: 49px; */
-    /*  */
-    /* background: #ECF4FF; */
-    /* box-shadow: 6px 6px 6px #0E1D2F; */
-    /* border-radius: 20px; */
-/* } */
+
+main
 
 h1{
     position: absolute;
@@ -50,20 +40,34 @@ h3{
 
     color: #1C1C1C;
 }
-/* .container{ */
-/*  */
-/* } */
+.container{
+    
+ }
 
 img{
     position: absolute;
-width: 158px;
-height: 160px;
-left: 154px;
-top: 79px;
+    width: 158px;
+    height: 160px;
+    left: 154px;
+    top: 79px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 460px;
+}
+main{
+position: absolute;
+width: 371px;
+height: 35px;
+left: 534px;
+top: 388px;
 
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 56px;
+text-align: center;
 
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-border-radius: 460px;
+color: #1C1C1C;
 }
 
 
