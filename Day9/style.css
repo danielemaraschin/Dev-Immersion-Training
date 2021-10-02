@@ -112,7 +112,9 @@ main{
     width: 1126px;
     height: 628px;
     left: 157px;
-    top: 283px;
+    /* top: 283px; */
+    margin-top: 32px; /* distancia q quer .projetos do elemento acima/fora ou elemento pai*/
+    padding: 32px;/* distancia q quer .projetos do elemento filho ou elemento dentro*/
 
     background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);
     box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
@@ -133,8 +135,9 @@ main{
 
 .projetos li{
 display: flex;
-width: 431px; 
-height: 387px;
+min-width: 241px;
+max-width: 431px; 
+max-height: 387px;
 left: 504px;
 top: 524px;
 
