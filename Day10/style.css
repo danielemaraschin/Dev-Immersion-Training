@@ -1,155 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-
-body{
-    background: linear-gradient(236.85deg, #504ed4 27.26%, #a734a1 96.03%);
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
+body {
+  background: linear-gradient(236.85deg, #ffffff 27.26%, #e283ca 96.03%);
+  font-family: "Roboto", sans-serif;
 }
 
-.perfil{
-    display: flex;
-    align-items: center;
+.container {
+  background: #ecf4ff;
+  color: #1c1c1c;
+  margin: 64px;
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px #0e1d2f;
+  padding: 64px;
 }
 
-.titulo h1{
-    position: absolute;
-    width: 499px;
-    height: 42px;
-    left: 322px;
-    top: 117px;
-    font-weight: 700;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-    
-    color: #1C1C1C;
+.perfil {
+  display: flex;
+  align-items: center;
 }
 
-.titulo h3{
-    position: absolute;
-    width: 499px;
-    height: 42px;
-    left: 322px;
-    top: 176px;
-    font: Roboto;
-    font-weight: 400;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28.13px;
-
-    color: #1C1C1C;
+.perfil-foto {
+  max-height: 160px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.titulo li{
-    position: absolute;
-    width: 499px;
-    height: 42px;
-    left: 322px;
-    min-width: none;
-    font: Roboto;
-    font-weight: 400;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 25px;
-
-    color: #1C1C1C;  
+.titulo {
+  margin-left: 16px;
 }
+
+.titulo h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.titulo h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+
+}
+
 li#git{
     top: 250px;
 }
 li#linkedin{
     top: 280px;
+   
 }
 
-.perfil-foto{
-    position: absolute;
-    width: 158px;
-    height: 160px;
-    max-height: 160px;
-    left: 154px;
-    
-    top:79px;
-    border-radius: 460px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.container{
-    /*position: absolute;*/
-    color: #1c1c1c;
-    width: 1260px;
-    height: 926px;
-    left: 90px;
-    top: 49px;
-    margin: 64px;
-    background: plum;
-    box-shadow: 6px 6px 6px #0E1D2F;
-    border-radius: 20px;
-    padding: 64px;
-}
-main{
-    position: absolute;
-    width: 1126px;
-    height: 628px;
-    left: 157px;
-    top: 283px;
-    margin: 30px;
-    background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);
-    box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
-    border-radius: 20px;
-}
-
-
-.projetos{
-    display: flex;
-    flex-direction:column;
-    text-align: center;
-    position: absolute;
-    width: 1126px;
-    height: 628px;
-    left: 157px;
-    /* top: 283px; */
-    margin-top: 32px; /* distancia q quer .projetos do elemento acima/fora ou elemento pai*/
-    padding: 32px;/* distancia q quer .projetos do elemento filho ou elemento dentro*/
-
-    background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);
-    box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
-    border-radius: 20px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 42.19px;
-    text-align: center;
-    color: #1C1C1C;
-}
-
-.titulo{
-    margin-left: 16px;
-}
-
-.projetos li{
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 42px; /*distancia entre linha*/
-    
-    color: #1C1C1C;
-    list-style: none; /*tirar as bolinhas na frente de cada item da lista*/
-}
-
-.projetos-titulo{
+li{
+    text-decoration: none;   /*tirar roxo e sublinhado links*/ 
     list-style: none;
-    font-weight: 700;
-     font-size: 36px;
     
-}
-
- a{
-text-decoration: none;   /*tirar roxo e sublinhado links*/ 
-color: #1C1C1C;
-
 }
