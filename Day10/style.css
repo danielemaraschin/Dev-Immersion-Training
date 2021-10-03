@@ -48,30 +48,10 @@ usamos para colocar o botao no final da pagina, no canto superior direito e a fo
   font-family: Roboto;
   font-size: 24px;
   padding: 8px 16px; /*8 pra cima e pra baixo e 16 na lateral*/
-    background: #ECF4FF;
+  background:rgb(223, 96, 212);
   border: 2px solid #0E1D2F;
   box-sizing: border-box;
   border-radius: 100px;
-
-
-  /* position: absolute;
-  width: 170px;
-  height: 61px;
-  left: 1116px;
-  top: 92px;
-  margin-right: 154px;
-  background: #ECF4FF;
-  border: 2px solid #0E1D2F;
-
- 
-
-  width: 154px;
-  height: 24px;
-  left: 1132px;
-  top: 111px;
-
-  line-height: 28.13px;
-  color: #0E1D2F; */
  }
 
 
