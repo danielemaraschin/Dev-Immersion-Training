@@ -80,5 +80,14 @@ a{
 }
 
 .dark{
-  background: linear-gradient(236.85deg, rgb(121, 30, 196) 96.03% #0E1D2F 27.26%);
+  background:linear-gradient(236.85deg, #0E1D2F 27.26%,  #750ea5 96.03%);
+}
+
+.dark .container{
+  background:linear-gradient(236.85deg, #264264 27.26%,  #8722b6 96.03%);
+  color: aliceblue;
+}
+
+.dark a{
+  color: aliceblue;
 }
