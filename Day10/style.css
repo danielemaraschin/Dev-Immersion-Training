@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
-  background: linear-gradient(236.85deg, #ffffff 27.26%, #e283ca 96.03%);
+  background: linear-gradient(236.85deg, #ffffff 27.26%, #e7a8d7 96.03%);
   font-family: "Roboto", sans-serif;
 }
 
 .container {
-  background: #ecf4ff;
+  background:rgb(247, 169, 205);
   color: #1c1c1c;
   margin: 64px;
   border-radius: 20px;
@@ -22,6 +22,7 @@ body {
 .perfil-foto {
   max-height: 160px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius:460px;
 }
 
 .titulo {
@@ -46,14 +47,18 @@ body {
 
 li#git{
     top: 250px;
+    color: #1C1C1C;
+
 }
 li#linkedin{
-    top: 280px;
-   
+    top: 280px;  
 }
 
 li{
-    text-decoration: none;   /*tirar roxo e sublinhado links*/ 
-    list-style: none;
-    
+    list-style: none; /*tira a bolinha na frente de cada item da lista*/
+}
+
+a{
+  text-decoration:none; /*remove sublinhado embaixo do itens da tag <a href=..*/
+  color: #1c1c1c;
 }
