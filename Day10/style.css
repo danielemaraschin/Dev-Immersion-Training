@@ -6,7 +6,8 @@ body {
 }
 .cabecalho{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /*justifica os elementos q estao dentro COM espaco entre eles 
+usamos para colocar o botao no final da pagina, no canto superior direito e a foto, nome, links no outro lado*/ 
 }
 .container {
   background:rgb(247, 169, 205);
