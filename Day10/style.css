@@ -78,3 +78,7 @@ a{
   text-decoration:none; /*remove sublinhado embaixo do itens da tag <a href=..*/
   color: #1c1c1c;
 }
+
+.dark{
+  background: linear-gradient(236.85deg, rgb(121, 30, 196) 96.03% #0E1D2F 27.26%);
+}
