@@ -4,7 +4,10 @@ body {
   background: linear-gradient(236.85deg, #ffffff 27.26%, #e7a8d7 96.03%);
   font-family: "Roboto", sans-serif;
 }
-
+.cabecalho{
+  display: flex;
+  justify-content: space-between;
+}
 .container {
   background:rgb(247, 169, 205);
   color: #1c1c1c;
