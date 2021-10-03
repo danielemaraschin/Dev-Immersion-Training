@@ -91,3 +91,9 @@ a{
 .dark a{
   color: aliceblue;
 }
+
+.dark .tema button{
+  background: #8722b6 ;
+  color:white;
+  border-color: white;
+}
