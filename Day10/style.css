@@ -39,6 +39,35 @@ body {
   font-size: 24px;
 }
 
+.tema {
+  align-self: flex-end;
+
+  /* position: absolute;
+  width: 170px;
+  height: 61px;
+  left: 1116px;
+  top: 92px;
+  margin-right: 154px;
+  background: #ECF4FF;
+  border: 2px solid #0E1D2F;
+  box-sizing: border-box;
+  border-radius: 100px;
+ 
+
+  width: 154px;
+  height: 24px;
+  left: 1132px;
+  top: 111px;
+  font-weight: 400px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28.13px;
+  color: #0E1D2F; */
+ }
+
+
 .projetos {
   display: flex;
   flex-direction: column;
@@ -62,31 +91,3 @@ a{
   text-decoration:none; /*remove sublinhado embaixo do itens da tag <a href=..*/
   color: #1c1c1c;
 }
-
-button{
-  position: absolute;
-  width: 170px;
-  height: 61px;
-  left: 1116px;
-  top: 92px;
-  
-  background: #ECF4FF;
-  border: 2px solid #0E1D2F;
-  box-sizing: border-box;
-  border-radius: 100px;
- 
-}
-
-.tema{
-  position: absolute;
-  width: 154px;
-  height: 24px;
-  left: 1132px;
-  top: 111px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28.13px;
-  color: #0E1D2F;
- }
